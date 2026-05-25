@@ -1,4 +1,4 @@
-/* --- Загальні стилі --- */
+/* Базові стилі */
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
     padding-top: 70px;
 }
 
-/* --- Шапка (Header) --- */
+/* Шапка */
 header {
     position: fixed;
     top: 0;
@@ -40,7 +40,7 @@ nav a {
     color: white;
 }
 
-/* --- Основний контент --- */
+/* Контент */
 main {
     width: 90%;
     margin: 20px auto;
@@ -50,7 +50,7 @@ main {
     margin-bottom: 20px;
 }
 
-/* --- Галерея --- */
+/* Галерея */
 .gallery {
     display: grid;
     gap: 20px;
@@ -63,13 +63,14 @@ main {
     transition: filter 0.3s ease;
     border: 2px solid #ccc;
     padding: 5px;
+    display: block;
 }
 
 .gallery img:hover {
     filter: grayscale(0%);
 }
 
-/* --- Адаптивність (Медіа-запити) --- */
+/* Адаптивність */
 @media (min-width: 768px) {
     .gallery {
         grid-template-columns: repeat(3, 1fr);
@@ -82,7 +83,7 @@ main {
     }
 }
 
-/* --- Підвал (Footer) --- */
+/* Підвал */
 footer {
     background: #311b92;
     color: white;
